@@ -861,7 +861,7 @@ ggsave(
 
 
 
-#10. Escherichia graph----
+#10. Escherichia species circle graph----
 base <- "/home/eunhye/raw_data1/eunhye/IgAN_renal_disease/DEH_IgAN_CODE/GSE175759_bracken/species"
 #SRR14678533~SRR14678578 :IgAN Sample
 
