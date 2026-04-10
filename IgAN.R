@@ -691,7 +691,6 @@ ht_micro <- Heatmap(sum_mat,
                     column_order = desired_order,
                     height = unit(4, "mm"))
 
-# 10) 세로로 붙이기
 png("/home/eunhye/raw_data1/eunhye/IgAN renal disease/DEH_IgAN_CODE/figure/Heatmap_IgAN_with_microbiome.png", width = 8, height = 6, units = "in", res = 600)
 draw(ht_gene %v% ht_micro)
 dev.off()
@@ -740,7 +739,7 @@ ncol(combined_data)
 cor_results <- corr.test(combined_data[,1:13], combined_data[,14:15], 
                          method="spearman")
 
-# 4. 결과
+#결과
 print(cor_results$r)  # correlation
 print(cor_results$p)  # p-value
 
@@ -815,7 +814,7 @@ ggsave(
 )
 
 
-#10. Escherichia graph----
+#10. Escherichia species circle graph----
 base <- "/home/eunhye/raw_data1/eunhye/IgAN_renal_disease/DEH_IgAN_CODE/Inhouse/extract"
 for (i in 1:7) {
   f <- file.path(base, sprintf("I%d_9606_filtered.bracken", i))
